@@ -1,0 +1,16 @@
+.env
+.htaccess
+/cache
+.DS_Store
+.idea
+/admin
+/local
+/forms/local
+/images/products
+/shared/connect.inc
+/feeds
+/vendor
+/taxjar
+vue-frontend/node_modules/@eslint/eslintrc/lib/shared/types.js
+vue-frontend/node_modules/
+vue/node_modules/

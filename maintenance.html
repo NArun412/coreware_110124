@@ -1,0 +1,23 @@
+<html><head>
+    <title>System Maintenance</title>
+    <style>
+        img { max-width: 100%; }
+        .hidden {
+            display: none;
+        }
+    </style>
+    <script>
+        setTimeout(function () {
+            document.getElementById("retry_link").classList.remove("hidden");
+        }, 30000);
+    </script>
+</head>
+
+<body>
+<div style="margin: 40px auto; width: 100%; max-width:400px; text-align: center;">
+    <img src="/images/maintenance.png" alt="Maintenance Image" onerror="this.src='/images/coreware.png';" onclick="document.location='/';" />
+    <p style="text-align: center;letter-spacing: 1px;">Our servers are experiencing some issues, we are working to resolve the problem.<br><br>
+         <a id="retry_link" class="hidden" href="/">Click HERE to try the site again.</a></p>
+</div>
+</body>
+</html>

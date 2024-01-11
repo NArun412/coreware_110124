@@ -1,0 +1,1037 @@
+/*	This software is the unpublished, confidential, proprietary, intellectual
+	property of Kim David Software, LLC and may not be copied, duplicated, retransmitted
+	or used in any manner without expressed written consent from Kim David Software, LLC.
+	Kim David Software, LLC owns all rights to this work and intends to keep this
+	software confidential so as to maintain its value as a trade secret.
+
+	Copyright 2004-Present, Kim David Software, LLC.
+
+	WARNING! This code is part of the Kim David Software's Coreware system.
+	Changes made to this source file will be lost when new versions of the
+	system are installed.
+*/
+
+* {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	color: inherit;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	flex-grow: 1;
+	flex-shrink: 0;
+	flex-basis: auto;
+	flex-shrink: 0;
+}
+
+html, body {
+	height: 100%;
+}
+
+i,em {
+	font-style: italic;
+}
+
+b,strong {
+	font-weight: bold;
+}
+
+u {
+	text-decoration: underline;
+}
+
+td {
+	vertical-align: middle;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+body {
+	line-height: 1.2;
+}
+
+ul,ol {
+	list-style: none;
+}
+
+blockquote, q {
+	quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+table td {
+	background-clip: padding-box;
+	position: static;
+}
+
+sup {
+	vertical-align: super;
+	font-size: smaller;
+}
+
+button {
+	border: none;
+}
+
+input:-webkit-autofill {
+	background-color: transparent;
+}
+
+input[type=checkbox] {
+	height: auto !important;
+}
+
+::-webkit-input-placeholder {
+	color: rgb(180,180,180);
+	text-align: center;
+	text-transform: none;
+}
+
+:-moz-placeholder {
+	color: rgb(180,180,180);
+	text-align: center;
+	text-transform: none;
+}
+
+::-moz-placeholder {
+	color: rgb(180,180,180);
+	text-align: center;
+	text-transform: none;
+}
+
+:-ms-input-placeholder {
+	color: rgb(180,180,180);
+	text-align: center;
+	text-transform: none;
+}
+
+/* Predefined classes and ids that can be used throughout the Coreware System */
+
+.align-center {
+	text-align: center !important;
+	margin-left: auto;
+	margin-right: auto;
+	vertical-align: middle;
+}
+
+.align-left {
+	text-align: left !important;
+}
+
+.align-right {
+	text-align: right !important;
+	margin-left: auto;
+}
+
+input.align-right {
+	margin-left: 0;
+}
+
+.align-top {
+	vertical-align: top;
+}
+
+.center-div {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+
+.checkbox-label {
+	padding-left: 10px;
+	cursor: pointer;
+	color: rgb(100,100,100);
+	font-weight: 600;
+}
+
+.clear-div {
+	clear: both;
+}
+
+.clickable {
+	cursor: pointer;
+}
+
+.dialog-box {
+	display: none;
+	z-index: 1000000 !important;
+}
+
+.display-block {
+	display: block;
+}
+
+.shown {
+	display: block !important;
+}
+
+div.dropzone {
+	margin: 10px 0;
+	max-width: 800px;
+	border-radius: 5px;
+	border: 2px dashed rgb(0,100,200);
+	background-color: rgb(245,245,245);
+}
+
+.empty-half-star {
+	transform: translate(-100%, 0) scaleX(-1);
+	margin-left: -1px;
+	width: 0;
+}
+
+.empty-hidden:empty {
+	display: none;
+}
+
+.error-message {
+	color: rgb(192,0,0);
+}
+
+.flip-horizontal {
+	transform: scaleX(-1);
+}
+
+.float-left {
+	float: left;
+}
+
+.float-right {
+	float: right;
+}
+
+.ui-widget.ui-tooltip {
+	font-size: .8rem;
+	z-index: 999999999;
+}
+
+.ui-datepicker-trigger {
+	border: none;
+}
+
+.ui-datepicker-trigger span.fa-calendar-alt {
+	font-size: 22px;
+	color: rgb(50,50,150);
+}
+
+.form-line {
+	position: relative;
+}
+
+.form-line .ui-datepicker-trigger,table .ui-datepicker-trigger {
+	padding: 5px;
+	padding-left: 10px;
+	position: relative;
+	top: -2px;
+	border: none;
+	background: none;
+	height: auto;
+	margin: 0;
+}
+
+.form-line .ui-datepicker-trigger:hover,table .ui-datepicker-trigger:hover {
+	color: rgb(200,200,200);
+	background-color: transparent;
+}
+
+.form-line span.help-label {
+	display: block;
+	font-size: .6rem;
+	max-width: 800px;
+}
+
+.ui-datepicker select.ui-datepicker-month,.ui-datepicker select.ui-datepicker-year {
+	min-width: 0;
+}
+
+.full-width {
+	width: 100%;
+}
+
+.green-text {
+	color: rgb(0,150,0) !important;
+}
+
+.grid-table {
+	border: 2px solid rgb(255,255,255);
+}
+
+.grid-table td {
+	border: 2px solid rgb(255,255,255);
+	padding: 3px 10px;
+	min-width: 50px;
+	position: relative;
+	background-color: rgb(240,240,240);
+}
+
+.grid-table th {
+	border: 2px solid rgb(255,255,255);
+	padding: 3px 10px;
+	vertical-align: middle;
+	color: rgb(255,255,255);
+}
+
+#_report_content table.grid-table, .report-page table.grid-table {
+	border: 1px solid rgb(50,50,50);
+}
+
+#_report_content td table, .report-page td table {
+	border: 0;
+}
+
+#_report_content table.grid-table td, .report-page table.grid-table td {
+	border: 1px solid rgb(50,50,50);
+	background-color: rgb(230,230,230);
+}
+
+#_report_content table.grid-table th, .report-page table.grid-table th {
+	border: 1px solid rgb(50,50,50);
+	color: rgb(0,0,0);
+	background-color: rgb(200,200,200);
+}
+
+#_report_content table th, .report-page table th {
+	color: rgb(0,0,0);
+	border: 1px solid rgb(50,50,50);
+	background-color: rgb(200,200,200);
+}
+
+.hidden {
+	display: none !important;
+}
+
+.highlight-yellow {
+	background-color: rgb(240,240,160);
+}
+
+.shaded-gray {
+	background-color: rgb(230,240,250);
+}
+
+.highlighted-text {
+	font-weight: 600;
+}
+
+.bold-text {
+	font-weight: 900;
+}
+
+.image-left {
+	float: left;
+	margin: 0;
+	margin-right: 20px;
+	margin-bottom: 10px;
+}
+
+.image-right {
+	float: right;
+	margin: 0;
+	margin-left: 20px;
+	margin-bottom: 10px;
+}
+
+.info-message {
+	color: rgb(15,180,50);
+}
+
+.inline-block {
+	display: inline-block;
+}
+
+.invisible {
+	visibility: hidden !important;
+}
+
+.italic {
+	font-style: italic;
+}
+
+.margin-50-div {
+	width: 50%;
+	margin: 40px auto;
+	max-width: 800px;
+}
+
+.margin-60-div {
+	width: 60%;
+	margin: 40px auto;
+	max-width: 960px;
+}
+
+.margin-70-div {
+	width: 70%;
+	margin: 40px auto;
+	max-width: 1050px;
+}
+
+.margin-75-div {
+	width: 75%;
+	margin: 40px auto;
+	max-width: 1200px;
+}
+
+.margin-80-div {
+	width: 80%;
+	margin: 40px auto;
+	max-width: 1400px;
+}
+
+.margin-90-div {
+	width: 90%;
+	margin: 40px auto;
+	max-width: 1600px;
+}
+
+.margin-div {
+	width: 90%;
+	margin: 40px auto;
+	max-width: 1600px;
+}
+
+.modal {
+	display: none;
+	position: fixed;
+	z-index: 999999999;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	background: rgba(0,0,0,.1) 50% 50% no-repeat;
+}
+
+.modal span {
+	position: absolute;
+	top: 30%;
+	left: calc(50% - 90px);
+	font-size: 180px;
+	color: rgb(200,200,200);
+}
+
+.no-margin {
+	margin: 0 !important;
+}
+
+.no-padding {
+	padding: 0 !important;
+}
+
+.no-wrap {
+	white-space: nowrap;
+}
+
+.position-relative {
+	position: relative;
+}
+.strength-bar-div {
+	max-width: 200px;
+	display: block;
+	top: 5px;
+}
+
+.strength-bar-label {
+	font-size: .6rem;
+	margin: 0;
+}
+
+.strength-bar {
+	font-size: 1px;
+	height: 6px;
+	width: 10px;
+}
+
+body.waiting-for-ajax {
+	overflow: hidden;
+}
+
+body.waiting-for-ajax .modal {
+	display: block;
+}
+
+body.no-waiting-for-ajax .modal {
+	display: none !important;
+}
+
+.moveable-background {
+	background-size: cover;
+	transform: scale(1.1);
+}
+
+.orange-text {
+	color: rgb(220,160,100) !important;
+}
+
+.page-break {
+	page-break-after: always;
+	column-break-after: always;
+	break-after: column;
+}
+
+.printable-only {
+	display: none;
+}
+
+.red-text {
+	color: rgb(192,0,0) !important;
+}
+
+.required-tag {
+	font-weight: 600;
+	color: rgb(192,0,0);
+}
+
+.strikethrough {
+	text-decoration: line-through;
+}
+
+.strikeout {
+	position: relative;
+}
+
+.strikeout::after {
+	border-bottom: 4px solid rgb(192,0,0);
+	content: "";
+	left: 0;
+	margin-top: calc(0.125em / 2 * -1);
+	position: absolute;
+	right: 0;
+	top: 50%;
+}
+
+sub,sup {
+	font-size: 60%;
+}
+
+.uppercase {
+	text-transform: uppercase;
+}
+
+.lowercase {
+	text-transform: lowercase;
+}
+
+.ui-dialog {
+	max-width: 90%;
+	z-index: 10000 !important;
+}
+
+.ui-dialog.no-titlebar .ui-dialog-titlebar {
+	border: none;
+	background-color: transparent;
+	height: 30px;
+}
+
+.ui-dialog.no-titlebar .ui-dialog-titlebar span.ui-dialog-title {
+	display: none;
+}
+
+#_post_iframe {
+	display: none;
+}
+
+#_templates {
+	display: none;
+}
+
+#_display_error {
+	display: none;
+}
+
+span.required-tag.fa-asterisk {
+	font-size: .5rem;
+	position: relative;
+	top: -6px;
+	color: rgb(192,0,0);
+	left: 4px;
+}
+
+button {
+	border: 1px solid rgb(20,20,20);
+	border-radius: 5px;
+	background-color: rgb(255,255,255);
+	padding: 8px 25px;
+	font-size: 1rem;
+	font-weight: 700;
+	color: rgb(80,80,80);
+	cursor: pointer;
+}
+
+button:hover {
+	background-color: rgb(220,220,220);
+}
+
+span.button {
+	border: 1px solid rgb(20,20,20);
+	border-radius: 5px;
+	background-color: rgb(255,255,255);
+	padding: 8px 25px;
+	font-size: 1rem;
+	font-weight: 700;
+	color: rgb(80,80,80);
+	cursor: pointer;
+	display: inline-block;
+}
+
+span.button:hover {
+	background-color: rgb(220,220,220);
+}
+
+table.header-sortable tr.header-row th .fa-sort-alpha-down-alt {
+	margin-left: 10px;
+	opacity: .8;
+	font-size: 120%;
+}
+
+table.header-sortable tr.header-row th .fa-sort-alpha-down {
+	margin-left: 10px;
+	opacity: .8;
+	font-size: 120%;
+}
+
+table.header-sortable th {
+	height: 30px;
+	vertical-align: middle;
+}
+
+#_maintenance_form .editable-select.autocomplete-field {
+	max-width: 100%;
+	width: 400px;
+}
+
+#autocomplete_options {
+	display: none;
+	position: absolute;
+	border: 1px solid rgb(200,200,200);
+	height: 180px;
+	overflow-x: hidden;
+	overflow-y: scroll;
+	background-color: rgb(255,255,255);
+	z-index: 200000;
+}
+
+#autocomplete_options ul {
+	padding: 2px;
+	position: relative;
+}
+
+#autocomplete_options ul li {
+	padding: 2px 5px;
+	cursor: pointer;
+	font-size: .8rem;
+}
+
+#autocomplete_options ul li:hover {
+	background-color: rgb(240,240,160);
+}
+
+#autocomplete_options ul li.selected {
+	background-color: rgb(240,240,160);
+}
+
+#autocomplete_address_choices_wrapper {
+	position: absolute;
+	border: 1px solid rgb(200,200,200);
+	overflow-x: hidden;
+	overflow-y: scroll;
+	background-color: rgb(255,255,255);
+	z-index: 200000;
+	height: auto;
+	max-height: 150px;
+	padding-bottom: 5px;
+}
+
+#autocomplete_address_choices_wrapper ul {
+	padding: 2px;
+	position: relative;
+	background-color: rgb(240, 255, 250);
+	list-style: none;
+	margin: 0;
+}
+
+#autocomplete_address_choices_wrapper ul li {
+	padding: 10px 5px;
+	cursor: pointer;
+	font-size: .8rem;
+	color: rgb(80,80,50);
+	font-weight: 500;
+	border-bottom: 1px solid rgb(200,200,240);
+	background-color: rgb(240, 255, 250);
+	list-style: none;
+	margin: 0;
+}
+
+#autocomplete_address_choices_wrapper ul li:hover {
+	background-color: rgb(190, 230, 200);
+	font-weight: 900;
+	color: rgb(30,30,0);
+}
+
+#autocomplete_address_choices_wrapper ul:hover li.selected {
+	background-color: rgb(240, 255, 250);
+	font-weight: 500;
+	color: rgb(80,80,50);
+}
+
+#autocomplete_address_choices_wrapper ul li.selected,#autocomplete_address_choices_wrapper ul:hover li.selected:hover {
+	background-color: rgb(190, 230, 200);
+	font-weight: 900;
+	color: rgb(30,30,0);
+}
+
+#_login_popup_dialog #login_form {
+	text-align: center;
+}
+
+#_login_popup_dialog #forgot_form {
+	display: none;
+	text-align: center;
+}
+
+.show-password {
+	margin-left: 10px;
+	cursor: pointer;
+}
+
+.copy-to-clipboard {
+	cursor: pointer;
+}
+
+.coreware-iframe {
+	width: 100%;
+	max-width: 100%;
+}
+
+.cke_wysiwyg_frame, .cke_wysiwyg_div {
+	background: rgb(255,255,255) url("/images/drop.png") no-repeat center center !important;
+}
+
+.tabbed-content {
+	border-top: 0;
+	color: #000;
+}
+
+.tabbed-content > ul.tabbed-content-nav {
+	display: flex;
+	flex-direction: row;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	list-style: none;
+}
+
+.tabbed-content .tabbed-content-body {
+	border: 1px solid rgb(100,100,100);
+	padding: 10px 40px;
+	margin-bottom: 20px;
+}
+
+.tabbed-content > ul.tabbed-content-nav > li {
+	border-radius: 2px 2px 0 0;
+	color: black;
+	flex: 0 0 auto;
+	margin: 0;
+	padding: 10px 15px;
+	text-align: center;
+	font-size: 2rem;
+	font-weight: bold;
+	list-style: none;
+	background-color: rgb(220, 220, 220);
+	border: 1px solid rgb(0, 0, 0);
+	cursor: pointer;
+}
+
+.tabbed-content .tabbed-content-buttons button {
+	margin: 0 40px 0 0;
+}
+
+.tabbed-content .tabbed-content-buttons button.disabled-button {
+	background-color: rgb(250,250,250);
+	color: rgb(220, 220, 220);
+	border-color: rgb(220,220,220);
+	cursor: auto;
+}
+
+.tabbed-content .tabbed-content-buttons button.disabled-button:hover {
+	background-color: rgb(250, 250, 250);
+	color: rgb(220, 220, 220);
+	border-color: rgb(220,220,220);
+}
+
+.tabbed-content > ul.tabbed-content-nav > li.active {
+	 background-color: rgb(40,40,40);
+	 color: white;
+}
+
+.tabbed-content .tabbed-content-body {
+	width: 100%;
+}
+
+.tabbed-content .tabbed-content-body > .tabbed-content-page {
+	padding: 5px 0;
+	width: 100%;
+}
+
+#_confirm_delete_dialog {
+    z-index: 999999;
+}
+
+.right-click-menu {
+	display: none;
+	z-index: 1000;
+	position: absolute;
+	overflow: hidden;
+	border: 1px solid rgb(0,0,0);
+	white-space: nowrap;
+	font-family: sans-serif;
+	background: rgb(240,240,240);
+	color: rgb(50,50,50);
+	border-radius: 2px;
+	margin: 0;
+}
+
+.right-click-menu li {
+	padding: 8px 12px;
+	cursor: pointer;
+	margin: 0;
+	font-size: 1rem;
+	font-weight: 900;
+}
+
+.right-click-menu li:hover {
+	background-color: #DEF;
+}
+
+@media only screen and (max-width: 1200px) {
+	.margin-75-div {
+		width: 90%;
+	}
+
+	.margin-60-div {
+		width: 75%;
+	}
+
+	.margin-50-div {
+		width: 60%;
+	}
+}
+
+@media only screen and (max-width: 800px) {
+	.margin-60-div {
+		width: 90%;
+	}
+
+	.margin-50-div {
+		width: 75%;
+	}
+}
+
+@media only screen and (max-width: 800px) {
+	.margin-50-div {
+		width: 90%;
+	}
+}
+
+
+/* CSS for new basic form line */
+
+.basic-form-line {
+	position: relative;
+	margin-bottom: 8px;
+}
+.basic-form-line.no-bottom-margin {
+	margin-bottom: 0;
+}
+.basic-form-line input[type=text], .basic-form-line textarea {
+	border-width: 2px;
+	border-radius: 2px;
+	border-color: rgb(220, 220, 220);
+	padding: 7px 10px 3px;
+}
+.basic-form-line input[type=text]:focus, .basic-form-line textarea:focus {
+	border-color: rgb(0, 114, 114);
+	background-color: rgb(255, 255, 255);
+}
+.basic-form-line select {
+	margin: 0;
+	outline: none;
+	font-size: .9rem;
+	box-shadow: none;
+	appearance: none;
+	background-image: url('../images/select_arrow.png');
+	background-position: 97% center;
+	background-repeat: no-repeat;
+	border-width: 2px;
+	overflow: hidden;
+	padding: 8px 40px 5px 10px;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	min-width: 150px;
+	max-width: 100%;
+	border-color: rgb(220, 220, 220);
+}
+.basic-form-line select:focus {
+	border-color: rgb(0, 114, 114);
+	border-width: 2px;
+}
+.basic-form-line input, .basic-form-line textarea {
+	outline: none;
+}
+.basic-form-line input[type=file] {
+	border-width: 2px;
+	border-radius: 2px;
+	font-size: .8rem;
+	border-color: rgb(220, 220, 220);
+}
+.basic-form-line input::file-selector-button {
+	padding: 4px 8px;
+	border: 2px solid rgb(220, 220, 220);
+	background-color: rgb(255, 255, 255);
+	border-radius: 2px;
+}
+.basic-form-line.inline-block {
+	padding-right: 15px;
+	display: inline-block;
+}
+.basic-form-line label {
+	display: block;
+	padding: 0;
+	font-size: .7rem;
+	color: rgb(0, 114, 114);
+}
+.basic-form-line .custom-control {
+	margin-top: 16px;
+	margin-bottom: 10px;
+}
+.basic-form-line.custom-control-no-help .custom-control {
+	margin: 0;
+}
+.basic-form-line.custom-control-form-line label {
+	font-size: 1.2rem;
+	font-weight: 600;
+}
+.basic-form-line .custom-control ~ .basic-form-line-messages {
+	position: absolute;
+	top: 22px;
+}
+.basic-form-line .basic-form-line-messages {
+	position: relative;
+	width: 100%;
+	line-height: .7;
+	height: 14px;
+}
+.basic-form-line span.help-label {
+	font-size: .65rem;
+	color: rgb(110, 110, 110);
+}
+.basic-form-line span.field-error-text {
+	font-size: .7rem;
+	color: rgb(200, 0, 0);
+	display: none;
+	line-height: 1;
+}
+.basic-form-line.field-error span.help-label {
+	display: none;
+}
+.basic-form-line.field-error span.field-error-text {
+	display: inline;
+}
+.basic-form-line span.extra-info {
+	font-size: .8rem;
+	position: relative;
+	top: -4px;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+.basic-form-line .inline-block {
+	margin-right: 10px;
+}
+.basic-form-line .float-left {
+	margin-right: 10px;
+	display: block;
+	float: left;
+}
+.basic-form-line > img {
+	display: inline-block;
+	position: relative;
+	top: 5px;
+}
+.basic-form-line label.checkbox-label {
+	float: none;
+	display: inline-block;
+	width: auto;
+	text-align: left;
+	padding-bottom: 0;
+	margin-left: 10px;
+	font-size: .9rem;
+	font-weight: 600;
+}
+.basic-form-line .custom-control label.checkbox-label {
+	font-weight: 400;
+}
+.basic-form-line .textarea-wrapper {
+	display: inline-block;
+	width: 100%;
+}
+.basic-form-line textarea {
+	display: inline-block;
+	width: 80%;
+	margin-bottom: -6px;
+}
+.basic-form-line .textarea-wrapper textarea {
+	width: 80%;
+}
+.basic-form-line .ui-datepicker-trigger {
+	padding: 5px;
+	padding-left: 10px;
+	position: relative;
+	top: -2px;
+	border: none;
+	background: none;
+	height: auto;
+	margin: 0;
+}
+.basic-form-line .ui-datepicker-trigger span {
+	color: rgb(0, 114, 114);
+}
+.basic-form-line .ui-datepicker-trigger:hover span {
+	color: rgb(200, 200, 200);
+}
+
+.catalog-result-product-tag {
+	display: none;
+	padding: 2px;
+	margin-right: 4px;
+	margin-bottom: 4px;
+	color: rgb(255, 255, 255);
+}

@@ -1,0 +1,597 @@
+accessibility:
+  icons:
+    - address-card
+    - circle-info
+    - circle-question
+    - eye
+    - question
+    - square-question
+  label: Accessibility
+alert:
+  icons:
+    - alarm-clock
+    - bell
+    - circle-exclamation
+    - question
+    - triangle-exclamation
+  label: Alert
+alphabet:
+  icons:
+    - address-card
+  label: Alphabet
+animals:
+  icons: []
+  label: Animals
+arrows:
+  icons:
+    - angle-down
+    - angles-down
+    - angles-up
+    - arrow-down-a-z
+    - arrow-down-z-a
+    - arrow-left
+    - arrow-right
+    - arrow-right-from-bracket
+    - arrow-right-long
+    - arrow-right-to-bracket
+    - arrow-rotate-left
+    - arrow-up-a-z
+    - caret-down
+    - caret-left
+    - caret-right
+    - caret-up
+    - chevron-down
+    - chevron-left
+    - chevron-right
+    - chevron-up
+    - chevrons-down
+    - chevrons-left
+    - chevrons-right
+    - chevrons-up
+    - circle-arrow-left
+    - circle-caret-down
+    - circle-caret-left
+    - circle-caret-right
+    - circle-caret-up
+    - circle-chevron-down
+    - circle-chevron-left
+    - circle-chevron-right
+    - circle-chevron-up
+    - down-to-line
+    - download
+    - right-from-bracket
+    - right-to-bracket
+    - rotate-right
+    - sort-down
+    - sort-up
+    - square-chevron-down
+    - square-chevron-left
+    - square-chevron-right
+    - square-chevron-up
+    - up-to-line
+    - upload
+  label: Arrows
+astronomy:
+  icons:
+    - globe
+  label: Astronomy
+automotive:
+  icons:
+    - charging-station
+    - truck
+    - truck-pickup
+  label: Automotive
+buildings:
+  icons:
+    - shop
+    - store
+  label: Buildings
+business:
+  icons:
+    - address-book
+    - address-card
+    - book
+    - box-archive
+    - calendar
+    - calendar-days
+    - copy
+    - envelope
+    - envelope-open
+    - eraser
+    - file
+    - floppy-disk
+    - folder
+    - folder-open
+    - globe
+    - marker
+    - pen-to-square
+    - pencil
+    - phone
+    - phone-flip
+    - print
+    - thumbtack
+  label: Business
+camping:
+  icons:
+    - map-location-dot
+  label: Camping
+charity:
+  icons:
+    - circle-heart
+    - dollar-sign
+    - gift
+    - globe
+    - hand-holding-dollar
+    - heart
+    - piggy-bank
+    - square-heart
+  label: Charity
+charts-diagrams:
+  icons: []
+  label: Charts + Diagrams
+childhood:
+  icons: []
+  label: Childhood
+clothing-fashion:
+  icons: []
+  label: Clothing + Fashion
+coding:
+  icons:
+    - barcode
+    - bars
+    - box-archive
+    - code
+    - file
+    - file-code
+    - folder
+    - folder-open
+    - gear
+    - gears
+    - keyboard
+  label: Coding
+communication:
+  icons:
+    - address-book
+    - address-card
+    - comment
+    - comment-plus
+    - envelope
+    - envelope-open
+    - message
+    - messages-question
+    - mobile-screen-button
+    - paper-plane
+    - phone
+    - phone-flip
+  label: Communication
+connectivity:
+  icons:
+    - bluetooth
+    - globe
+  label: Connectivity
+construction:
+  icons:
+    - pencil
+    - screwdriver-wrench
+    - truck-pickup
+  label: Construction
+design:
+  icons:
+    - copy
+    - crosshairs
+    - eraser
+    - eye
+    - floppy-disk
+    - marker
+    - pen-to-square
+    - pencil
+  label: Design
+devices-hardware:
+  icons:
+    - desktop
+    - download
+    - floppy-disk
+    - keyboard
+    - mobile-screen-button
+    - print
+    - server
+    - tablet-screen-button
+    - upload
+  label: Devices + Hardware
+disaster:
+  icons: []
+  label: Disaster + Crisis
+editing:
+  icons:
+    - bars
+    - check
+    - circle-check
+    - ellipsis-vertical
+    - gear
+    - link
+    - minus
+    - pen-to-square
+    - pencil
+    - plus
+    - sliders
+    - square-check
+    - trash
+    - trash-can
+    - trash-undo
+    - xmark
+  label: Editing
+education:
+  icons:
+    - bell
+    - books
+  label: Education
+emoji:
+  icons: []
+  label: Emoji
+energy:
+  icons:
+    - bolt
+    - charging-station
+  label: Energy
+files:
+  icons:
+    - box-archive
+    - copy
+    - file
+    - file-code
+    - floppy-disk
+    - folder
+    - folder-open
+  label: Files
+film-video:
+  icons:
+    - star-sharp-half-stroke
+    - ticket
+    - youtube
+  label: Film + Video
+food-beverage:
+  icons: []
+  label: Food + Beverage
+fruits-vegetables:
+  icons: []
+  label: Fruits + Vegetables
+gaming:
+  icons:
+    - heart
+  label: Gaming
+gender:
+  icons: []
+  label: Genders
+halloween:
+  icons: []
+  label: Halloween
+hands:
+  icons:
+    - hand-holding-dollar
+    - thumbs-down
+    - thumbs-up
+  label: Hands
+holidays:
+  icons:
+    - gift
+    - gifts
+    - heart
+  label: Holidays
+household:
+  icons:
+    - bell
+    - books
+  label: Household
+humanitarian:
+  icons:
+    - envelope
+    - file
+    - id-card
+    - shop
+    - trash-can
+    - truck
+  label: Humanitarian
+logistics:
+  icons:
+    - gears
+    - truck
+    - truck-fast
+  label: Logistics
+maps:
+  icons:
+    - bag-shopping
+    - bags-shopping
+    - basket-shopping
+    - bell
+    - book
+    - bookmark
+    - cart-shopping
+    - circle-info
+    - crosshairs
+    - dollar-sign
+    - eye
+    - gavel
+    - gift
+    - globe
+    - heart
+    - location-check
+    - location-dot
+    - location-pin
+    - location-plus
+    - location-question
+    - magnifying-glass
+    - magnifying-glass-minus
+    - magnifying-glass-plus
+    - map-pin
+    - money-bill
+    - phone
+    - phone-flip
+    - plus
+    - print
+    - square-plus
+    - thumbtack
+    - ticket
+    - truck
+  label: Maps
+maritime:
+  icons: []
+  label: Maritime
+marketing:
+  icons:
+    - gift-card
+  label: Marketing
+mathematics:
+  icons:
+    - circle-xmark
+    - minus
+    - octagon-plus
+    - plus
+    - xmark
+  label: Mathematics
+media-playback:
+  icons:
+    - arrow-rotate-left
+    - backward
+    - circle-play
+    - compress
+    - expand
+    - forward
+    - minimize
+    - pause
+    - play-pause
+    - rotate-right
+    - sliders
+  label: Media Playback
+medical-health:
+  icons:
+    - eye
+    - file-waveform
+    - heart
+    - plus
+    - receipt
+    - square-plus
+  label: Medical + Health
+money:
+  icons:
+    - bitcoin
+    - credit-card
+    - dollar-sign
+    - file-invoice
+    - hand-holding-dollar
+    - money-bill
+    - money-bill-wave
+    - money-check
+    - piggy-bank
+    - receipt
+  label: Money
+moving:
+  icons:
+    - box-archive
+  label: Moving
+music-audio:
+  icons:
+    - sliders
+  label: Music + Audio
+nature:
+  icons: []
+  label: Nature
+numbers:
+  icons: []
+  label: Numbers
+photos-images:
+  icons:
+    - bolt
+    - eye
+    - id-card
+    - minimize
+    - sliders
+  label: Photos + Images
+political:
+  icons:
+    - piggy-bank
+  label: Political
+punctuation-symbols:
+  icons:
+    - asterisk
+    - check
+    - circle-exclamation
+    - circle-question
+    - minus
+    - plus
+    - question
+    - square-question
+  label: Punctuation + Symbols
+religion:
+  icons: []
+  label: Religion
+science:
+  icons: []
+  label: Science
+science-fiction:
+  icons: []
+  label: Science Fiction
+security:
+  icons:
+    - eye
+    - gun
+    - id-card
+    - lock
+  label: Security
+shapes:
+  icons:
+    - bookmark
+    - calendar
+    - circle-heart
+    - comment
+    - file
+    - folder
+    - heart
+    - location-pin
+    - square
+    - star
+    - star-sharp-half-stroke
+  label: Shapes
+shopping:
+  icons:
+    - apple-pay
+    - bag-shopping
+    - bags-shopping
+    - barcode
+    - basket-shopping
+    - bell
+    - bitcoin
+    - bookmark
+    - cart-shopping
+    - cc-amazon-pay
+    - cc-amex
+    - cc-apple-pay
+    - cc-diners-club
+    - cc-discover
+    - cc-jcb
+    - cc-mastercard
+    - cc-paypal
+    - cc-stripe
+    - cc-visa
+    - credit-card
+    - gift
+    - gift-card
+    - gifts
+    - google-pay
+    - heart
+    - money-check
+    - receipt
+    - shop
+    - star
+    - store
+    - thumbs-down
+    - thumbs-up
+    - truck
+    - truck-fast
+  label: Shopping
+social:
+  icons:
+    - bags-shopping
+    - bell
+    - circle-user
+    - comment
+    - envelope
+    - heart
+    - location-dot
+    - location-pin
+    - message
+    - star
+    - thumbs-down
+    - thumbs-up
+    - thumbtack
+    - user
+    - user-group
+    - user-plus
+  label: Social
+spinners:
+  icons:
+    - asterisk
+    - crosshairs
+    - gear
+    - spinner
+  label: Spinners
+sports-fitness:
+  icons:
+    - heart
+  label: Sports + Fitness
+text-formatting:
+  icons:
+    - check
+    - circle-check
+    - list
+    - list-ul
+    - square-check
+    - table-cells
+  label: Text Formatting
+time:
+  icons:
+    - alarm-clock
+    - bell
+    - calendar
+    - calendar-days
+    - calendar-plus
+    - calendar-week
+    - clock
+    - stopwatch
+  label: Time
+toggle:
+  icons:
+    - circle-check
+    - star
+    - star-half
+  label: Toggle
+transportation:
+  icons:
+    - cart-shopping
+    - paper-plane
+    - truck
+    - truck-pickup
+  label: Transportation
+travel-hotel:
+  icons:
+    - alarm-clock
+    - earth-africa
+    - earth-americas
+    - earth-asia
+    - earth-europe
+    - map-location-dot
+  label: Travel + Hotel
+users-people:
+  icons:
+    - address-book
+    - address-card
+    - circle-user
+    - id-card
+    - user
+    - user-check
+    - user-gear
+    - user-group
+    - user-pen
+    - user-plus
+    - users-gear
+  label: Users + People
+weather:
+  icons:
+    - bolt
+  label: Weather
+writing:
+  icons:
+    - book
+    - bookmark
+    - box-archive
+    - envelope
+    - envelope-open
+    - eraser
+    - file
+    - folder
+    - folder-open
+    - keyboard
+    - paper-plane
+    - pen-to-square
+    - pencil
+    - thumbtack
+  label: Writing

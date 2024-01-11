@@ -1,0 +1,15 @@
+RewriteEngine on
+RewriteRule ^\.git/ - [R=404,L]
+RewriteRule ^classes/$ /allclasses [L,R=301]
+RewriteRule ^classes$ /allclasses [L,R=301]
+RewriteRule ^(.*)\.[\d]{10}\.(css|js)$ $1.$2 [L]
+RewriteRule xmlsitemap[0-9]*.xml xmlsitemap.php [L]
+RewriteRule xmlsitemap.xml xmlsitemap.php [L]
+RewriteRule sitemap.xml xmlsitemap.php [L]
+RewriteRule gundealsfeed.xml gundealsfeed.php [L]
+RewriteRule ^productdetails\.php$ /product-details [R=301,L,QSA]
+RewriteRule robots.txt robots.php [L]
+RewriteCond %{SCRIPT_FILENAME} !-d
+RewriteCond %{SCRIPT_FILENAME} !-f
+RewriteCond %{HTTP_HOST} !=localhost
+RewriteRule ^(.*)$ /urlalias.php/$1/%{QUERY_STRING} [L]

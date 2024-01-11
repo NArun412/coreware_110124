@@ -1,0 +1,202 @@
+/*!
+ * Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com
+ * License - https://fontawesome.com/license (Commercial License)
+ * Copyright 2023 Fonticons, Inc.
+ */
+:root, :host {
+  --fa-style-family-brands: 'Font Awesome 6 Brands';
+  --fa-font-brands: normal 400 1em/1 'Font Awesome 6 Brands'; }
+
+@font-face {
+  font-family: 'Font Awesome 6 Brands';
+  font-style: normal;
+  font-weight: 400;
+  font-display: block;
+  src: url("../webfonts/fa-brands-400.woff2") format("woff2"), url("../webfonts/fa-brands-400.ttf") format("truetype"); }
+
+.fab,
+.fa-brands {
+  font-weight: 400; }
+
+.fa-cc-visa:before {
+  content: "\f1f0"; }
+
+.fa-ups:before {
+  content: "\f7e0"; }
+
+.fa-mailchimp:before {
+  content: "\f59e"; }
+
+.fa-vimeo-v:before {
+  content: "\f27d"; }
+
+.fa-square-instagram:before {
+  content: "\e055"; }
+
+.fa-instagram-square:before {
+  content: "\e055"; }
+
+.fa-square-snapchat:before {
+  content: "\f2ad"; }
+
+.fa-snapchat-square:before {
+  content: "\f2ad"; }
+
+.fa-google-plus-g:before {
+  content: "\f0d5"; }
+
+.fa-google-plus:before {
+  content: "\f2b3"; }
+
+.fa-google:before {
+  content: "\f1a0"; }
+
+.fa-linkedin-in:before {
+  content: "\f0e1"; }
+
+.fa-cc-apple-pay:before {
+  content: "\f416"; }
+
+.fa-square-twitter:before {
+  content: "\f081"; }
+
+.fa-twitter-square:before {
+  content: "\f081"; }
+
+.fa-app-store:before {
+  content: "\f36f"; }
+
+.fa-cc-mastercard:before {
+  content: "\f1f1"; }
+
+.fa-square-youtube:before {
+  content: "\f431"; }
+
+.fa-youtube-square:before {
+  content: "\f431"; }
+
+.fa-discord:before {
+  content: "\f392"; }
+
+.fa-app-store-ios:before {
+  content: "\f370"; }
+
+.fa-cc-discover:before {
+  content: "\f1f2"; }
+
+.fa-ebay:before {
+  content: "\f4f4"; }
+
+.fa-square-vimeo:before {
+  content: "\f194"; }
+
+.fa-vimeo-square:before {
+  content: "\f194"; }
+
+.fa-apple:before {
+  content: "\f179"; }
+
+.fa-apple-pay:before {
+  content: "\f415"; }
+
+.fa-cc-paypal:before {
+  content: "\f1f4"; }
+
+.fa-cc-stripe:before {
+  content: "\f1f5"; }
+
+.fa-bitcoin:before {
+  content: "\f379"; }
+
+.fa-square-pinterest:before {
+  content: "\f0d3"; }
+
+.fa-pinterest-square:before {
+  content: "\f0d3"; }
+
+.fa-facebook-f:before {
+  content: "\f39e"; }
+
+.fa-square-google-plus:before {
+  content: "\f0d4"; }
+
+.fa-google-plus-square:before {
+  content: "\f0d4"; }
+
+.fa-wpforms:before {
+  content: "\f298"; }
+
+.fa-usps:before {
+  content: "\f7e1"; }
+
+.fa-audible:before {
+  content: "\f373"; }
+
+.fa-tiktok:before {
+  content: "\e07b"; }
+
+.fa-square-facebook:before {
+  content: "\f082"; }
+
+.fa-facebook-square:before {
+  content: "\f082"; }
+
+.fa-linkedin:before {
+  content: "\f08c"; }
+
+.fa-vimeo:before {
+  content: "\f40a"; }
+
+.fa-cc-amazon-pay:before {
+  content: "\f42d"; }
+
+.fa-instagram:before {
+  content: "\f16d"; }
+
+.fa-facebook:before {
+  content: "\f09a"; }
+
+.fa-whatsapp:before {
+  content: "\f232"; }
+
+.fa-bluetooth:before {
+  content: "\f293"; }
+
+.fa-cc-diners-club:before {
+  content: "\f24c"; }
+
+.fa-pinterest-p:before {
+  content: "\f231"; }
+
+.fa-cc-jcb:before {
+  content: "\f24b"; }
+
+.fa-snapchat:before {
+  content: "\f2ab"; }
+
+.fa-snapchat-ghost:before {
+  content: "\f2ab"; }
+
+.fa-cc-amex:before {
+  content: "\f1f3"; }
+
+.fa-youtube:before {
+  content: "\f167"; }
+
+.fa-twitter:before {
+  content: "\f099"; }
+
+.fa-pinterest:before {
+  content: "\f0d2"; }
+
+.fa-square-whatsapp:before {
+  content: "\f40c"; }
+
+.fa-whatsapp-square:before {
+  content: "\f40c"; }
+
+.fa-usb:before {
+  content: "\f287"; }
+
+.fa-google-pay:before {
+  content: "\e079"; }

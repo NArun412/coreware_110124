@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta name="author" content="Kim David Software, LLC" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<title>SSL Required</title>
+
+<link type="text/css" rel="stylesheet" href="/css/reset.css" />
+<script src="/js/jquery-3.4.0.min.js"></script>
+<script src="/js/jquery-migrate-3.0.1.min.js"></script>
+<style>
+html { font-size: 16px; }
+body { padding: 40px; }
+h1 { font-size: 3.0rem; color: rgb(0,70,108); font-weight: bold; margin-bottom: 20px; }
+p { font-size: 1.2rem; margin-bottom: 10px; }
+button { border: 1px solid rgb(0,70,108); background-color: rgb(200,200,200); padding: 0; margin: 0; cursor: pointer; color: rgb(20,20,20); font-size: 1.0rem; font-weight: bold; padding: 5px 15px; border-radius: 5px; }
+button:hover { border: 1px solid rgb(200,200,200); background-color: rgb(0,70,108); color: rgb(240,240,240); }
+a,a:link,a:active,a:visited { font-size: 1.2rem; font-weight: bold; color: rgb(0,70,108); text-align: left; text-decoration: none; }
+a:hover { color: rgb(50,50,50); text-decoration: underline; }
+</style>
+<script>
+$(function() {
+	$("#home_page").click(function() {
+		document.location = "/";
+	});
+});
+</script>
+</head>
+
+<body>
+<h1>Security Error</h1>
+<p>This page cannot be displayed on an insecure connection. Please contact the website administrator to resolve this issue.</p>
+<p><button id="home_page">Return to Home Page</button></p>
+</body>

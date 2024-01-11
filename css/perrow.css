@@ -1,0 +1,101 @@
+.five-per-row { width: 18%; max-width: 18%; margin: 0 2.5% 0 0; margin-bottom: 10px; float: left; }
+.five-per-row:nth-child(5n+1) { clear: both; }
+.five-per-row:nth-child(5n+5) { margin-right: 0; }
+.five-per-row img { max-width: 100%; }
+
+@media only screen and (max-width: 1250px) {
+	.five-per-row { width: 23.5%; max-width: 23.5%; margin: 0 2% 0 0; }
+	.five-per-row:nth-child(5n+1) { clear: none; }
+	.five-per-row:nth-child(5n+5) { margin-right: 2%; }
+	.five-per-row:nth-child(4n+1) { clear: both; }
+	.five-per-row:nth-child(4n+4) { margin-right: 0; }
+}
+
+@media only screen and (max-width: 1000px) {
+	.five-per-row { width: 31%; max-width: 31%; margin: 0 3.5% 0 0; }
+	.five-per-row:nth-child(4n+1) { clear: none; }
+	.five-per-row:nth-child(4n+4) { margin-right: 3.5%; }
+	.five-per-row:nth-child(3n+1) { clear: both; }
+	.five-per-row:nth-child(3n+3) { margin-right: 0; }
+}
+
+@media only screen and (max-width: 750px) {
+	.five-per-row { width: 48%; max-width: 48%; margin: 0 4% 0 0; }
+	.five-per-row:nth-child(3n+1) { clear: none; }
+	.five-per-row:nth-child(3n+3) { margin-right: 4%; }
+	.five-per-row:nth-child(2n+1) { clear: both; }
+	.five-per-row:nth-child(2n+2) { margin-right: 0; }
+}
+
+@media only screen and (max-width: 500px) {
+	.five-per-row { width: 100%; margin: 0; max-width: 100%; }
+}
+
+.four-per-row { width: 23.5%; max-width: 23.5%; margin: 0 2% 0 0; margin-bottom: 10px; float: left; }
+.four-per-row:nth-child(4n+1) { clear: both; }
+.four-per-row:nth-child(4n+4) { margin-right: 0; }
+.four-per-row img { max-width: 100%; }
+
+@media only screen and (max-width: 1200px) {
+	.four-per-row { width: 31%; max-width: 31%; margin: 0 3.5% 0 0; }
+	.four-per-row:nth-child(4n+1) { clear: none; }
+	.four-per-row:nth-child(4n+4) { margin-right: 3.5%; }
+	.four-per-row:nth-child(3n+1) { clear: both; }
+	.four-per-row:nth-child(3n+3) { margin-right: 0; }
+}
+
+@media only screen and (max-width: 800px) {
+	.four-per-row { width: 48%; max-width: 48%; margin: 0 4% 0 0; }
+	.four-per-row:nth-child(3n+1) { clear: none; }
+	.four-per-row:nth-child(3n+3) { margin-right: 4%; }
+	.four-per-row:nth-child(2n+1) { clear: both; }
+	.four-per-row:nth-child(2n+2) { margin-right: 0; }
+}
+
+@media only screen and (max-width: 550px) {
+	.four-per-row { width: 100%; margin: 0; max-width: 100%; }
+}
+
+.three-per-row { width: 32%; max-width: 32%; margin: 0 2% 0 0; margin-bottom: 10px; float: left; }
+.three-per-row:nth-child(3n+1) { clear: both; }
+.three-per-row:nth-child(3n+3) { margin-right: 0; }
+.three-per-row img { max-width: 100%; }
+
+@media only screen and (max-width: 1000px) {
+	.three-per-row { width: 48%; max-width: 48%; margin: 0 4% 0 0; }
+	.three-per-row:nth-child(3n+1) { clear: none; }
+	.three-per-row:nth-child(3n+3) { margin-right: 4%; }
+	.three-per-row:nth-child(2n+1) { clear: both; }
+	.three-per-row:nth-child(2n+2) { margin-right: 0; }
+}
+
+@media only screen and (max-width: 650px) {
+	.three-per-row { width: 100%; max-width: 100%; margin: 0; }
+}
+
+.two-per-row { width: 48%; max-width: 48%; margin: 0 4% 0 0; margin-bottom: 10px; float: left; }
+.two-per-row:nth-child(2n+1) { clear: both; }
+.two-per-row:nth-child(2n+2) { margin-right: 0; }
+.two-per-row img { max-width: 100%; }
+
+@media only screen and (max-width: 800px) {
+	.two-per-row { width: 100%; max-width: 100%; margin: 0; }
+}
+
+.left-third-per-row { width: 32%; max-width: 32%; margin: 0 4% 0 0; margin-bottom: 10px; float: left; }
+.left-third-per-row:nth-child(2n+1) { clear: both; }
+.left-third-per-row:nth-child(2n+2) { width: 64%; max-width: 64%; margin-right: 0; }
+.left-third-per-row img { max-width: 100%; }
+
+@media only screen and (max-width: 800px) {
+	.left-third-per-row { width: 100%; max-width: 100%; margin: 0; }
+}
+
+.right-third-per-row { width: 64%; max-width: 64%; margin: 0 4% 0 0; margin-bottom: 10px; float: left; }
+.right-third-per-row:nth-child(2n+1) { clear: both; }
+.right-third-per-row:nth-child(2n+2) { width: 32%; max-width: 32%; margin-right: 0; }
+.right-third-per-row img { max-width: 100%; }
+
+@media only screen and (max-width: 800px) {
+	.right-third-per-row { width: 100%; max-width: 100%; margin: 0; }
+}

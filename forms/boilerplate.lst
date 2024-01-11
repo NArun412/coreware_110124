@@ -1,0 +1,32 @@
+%if:$rowIndex == 0%
+<style>
+    .data-row {
+        cursor: pointer;
+        border-bottom: 1px solid rgb(200,200,200);
+        padding: 5px 0;
+        overflow: hidden;
+        min-height: 100px;
+    }
+    .list-image {
+        max-height: 100px;
+    }
+</style>
+%endif%
+<div class="data-row" data-primary_id="%primary_id%">
+%if_has_value:image_id%
+    <img class="list-image float-right" src="/getimage.php?id=%image_id%">
+%else%
+    <span class="float-right">NO Image</span>
+%endif%
+    <ul>
+%if_has_value:hash_code%
+        <li>
+            <span class="fad fa-credit-card"></span>
+        </li>
+%endif%
+        <li>First Name: %first_name%</li>
+        <li>Last Name: %last_name%</li>
+        <li>Street: %address_1%</li>
+    </ul>
+    %method:testMethod%
+</div>

@@ -1,0 +1,35 @@
+<?php
+
+// Template for connect.inc files
+
+$GLOBALS['gDevelopmentServer'] = false;
+
+$hostName = ($_SERVER['HTTP_HOST'] == "large-beta.coreware.com" ? "large-beta.coreware.com" : gethostname());
+switch ($hostName) {
+
+	case "beta.coreware.com":
+		$GLOBALS['gDatabaseName'] = "coreforcebetadb";
+		$GLOBALS['gDatabaseConnections'][] = array("override_localhost"=>true,"host_name" => "beta-rds-cluster.cluster-cuz0d9mifyog.us-east-1.rds.amazonaws.com",
+		    "read_replica" => "beta-rds-cluster.cluster-ro-cuz0d9mifyog.us-east-1.rds.amazonaws.com", "development"=>true);
+		break;
+
+	case "large-beta.coreware.com":
+		$GLOBALS['gDatabaseName'] = "coreforcelargebetadb";
+		$GLOBALS['gDatabaseConnections'][] = array("override_localhost"=>true,"host_name" => "beta-rds-cluster.cluster-cuz0d9mifyog.us-east-1.rds.amazonaws.com",
+		    "read_replica" => "beta-rds-cluster.cluster-ro-cuz0d9mifyog.us-east-1.rds.amazonaws.com", "development"=>true);
+		break;
+
+	case "beta2.coreware.com":
+        $GLOBALS['gDatabaseName'] = "coreforcebeta2db";
+        $GLOBALS['gDatabaseConnections'][] = array("override_localhost"=>true,"host_name" => "beta2-rds-cluster.cluster-cuz0d9mifyog.us-east-1.rds.amazonaws.com",
+            "read_replica" => "beta2-rds-cluster.cluster-cuz0d9mifyog.us-east-1.rds.amazonaws.com", "development"=>true);
+        break;
+
+	case "manage.coreware.com":
+		$GLOBALS['gDatabaseName'] = "corewareincdb";
+		$GLOBALS['gDatabaseConnections'][] = array("host_name" => "HOSTNAME HERE",
+		    "read_replica" => "HOSTNAME HERE");
+		break;
+
+}
+
