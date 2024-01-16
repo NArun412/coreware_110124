@@ -36,13 +36,13 @@ class usaEpay extends eCommerce {
 		}
 		$pin = $this->iMerchantAccountRow['account_login'];
 		$sourceKey = $this->iMerchantAccountRow['account_key'];
-		try {
-			$this->iClientObject = new SoapClient($this->iUseUrl);
-		} catch (Exception $e) {
-			if ($GLOBALS['gDevelopmentServer']) {
-				$this->iClientObject = false;
-			}
-		}
+		// try {
+		// 	$this->iClientObject = new SoapClient($this->iUseUrl);
+		// } catch (Exception $e) {
+		// 	if ($GLOBALS['gDevelopmentServer']) {
+		// 		$this->iClientObject = false;
+		// 	}
+		// }
 		$seed = time() . mt_rand();
 		$clear = $sourceKey . $seed . $pin;
 		$hash = sha1($clear);
